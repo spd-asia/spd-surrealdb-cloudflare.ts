@@ -1,12 +1,12 @@
 # compiled output
 /dist
-/out
 /*.js
 /*.js.map
 /*.d.ts
 
 # dependencies
-/node_modules
+npm
+node_modules
 
 # IDE - VSCode
 .vscode

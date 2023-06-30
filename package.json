@@ -1,16 +1,26 @@
 {
   "name": "spd-surrealdb-cloudflare.ts",
-  "version": "1.0.0",
+  "version": "0.1.0",
   "description": "",
-  "main": "src/main.ts",
+  "main": "src/index.ts",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "vitest",
+    "dev": "vitest -w",
+    "debug": "node --inspect-brk node_modules/.bin/vitest",
+    "coverage": "vitest --coverage"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
     "@cloudflare/workers-types": "^4.20230518.0",
-    "@types/node": "^20.3.2"
+    "@types/node": "^20.3.2",
+    "esbuild": "^0.14.54",
+    "typescript": "^4.9.5",
+    "vitest": "^0.0.103"
+  },
+  "vitest": {
+    "rootDir": "src",
+    "testMatch": "**/*.spec.ts"
   }
 }
