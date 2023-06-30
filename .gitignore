@@ -1,0 +1,23 @@
+# compiled output
+/dist
+/out
+/*.js
+/*.js.map
+/*.d.ts
+
+# dependencies
+/node_modules
+
+# IDE - VSCode
+.vscode
+*.code-workspace
+
+# IDE - Webstorm/IntelliJ
+.idea
+
+# environment variables
+.env
+
+# system files
+.DS_Store
+Thumbs.db
