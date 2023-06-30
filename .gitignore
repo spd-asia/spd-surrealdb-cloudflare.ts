@@ -1,5 +1,5 @@
 # compiled output
-/dist
+# /dist // including types
 /*.js
 /*.js.map
 /*.d.ts
