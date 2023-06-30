@@ -1,3 +1,6 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.Surreal = void 0;
 class ConnectionError extends Error {
 }
 const createAuthorization = (username, password) => {
@@ -9,7 +12,7 @@ const createAuthorization = (username, password) => {
     }
     throw new Error("Cannot encode credentials: btoa and Buffer are not available");
 };
-export class Surreal {
+class Surreal {
     constructor(config, fetcher) {
         this.host = config.host;
         this.username = config.username;
@@ -113,4 +116,5 @@ export class Surreal {
         return response.json();
     }
 }
-export default Surreal;
+exports.Surreal = Surreal;
+exports.default = Surreal;
