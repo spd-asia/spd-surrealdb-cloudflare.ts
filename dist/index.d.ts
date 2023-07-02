@@ -1,4 +1,3 @@
-/// <reference types="@cloudflare/workers-types" />
 export type SurrealConfig = {
     host: string;
     username: string;

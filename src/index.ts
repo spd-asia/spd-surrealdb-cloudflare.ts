@@ -96,7 +96,7 @@ export class Surreal<TFetcher extends FetchFunction = FetchFunction> {
     query: string
   ): Promise<SurrealResponse<TResult>> {
     return await this.request<TResult>("sql", {
-      plainBody: true,
+      method: "POST",
       body: query,
     });
   }
